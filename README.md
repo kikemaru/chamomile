@@ -1,7 +1,7 @@
 <p align="center"><img src="https://i.ibb.co/TqcPXZL/White-Chamomile-Transparent-PNG.png" width="120"></p>
 
 # <p align="center">chamomile</p>
-<p align="center">An application for creating services with an HTTP interface.</p>
+<p align="center">An application for creating services with an HTTP interface.</p><br><br><br>
 
 ## Installing chamomile:
 - Clone the repository to your local machine
