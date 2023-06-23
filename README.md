@@ -9,21 +9,10 @@
   ```bash
   git clone https://github.com/kikemaru/chamomile.git
   ```
-- Navigate to the repository directory and execute the commands to install dependencies.
+- Navigate to the repository directory and start the Docker container using the following command:
 
+   ```bash
+  cd chamomile && docker compose up -d
    ```
-  cd chamomile
-   ```
-   ```
-  docker compose up -d
-  docker exec -it chamomile_app bash
-   ```
-   ```
-  composer install
-  composer dump-autoload
-   ```
-   ```
-  php artisan migrate
-  ```
 
 ## This application is in the development stage!
