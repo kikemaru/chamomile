@@ -20,7 +20,7 @@ services:
       - ./api_manager:/var/www
     depends_on:
       - db
-    command: bash -c "cp .env.example .env && composer install && php-fpm"
+    command: bash -c "cp .env.example .env && composer install && php artisan key:generate && php artisan migrate && php-fpm"
     container_name: chamomile_app
 
   db:
