@@ -20,6 +20,7 @@ services:
       - ./api_manager:/var/www
     depends_on:
       - db
+    command: bash -c "composer install && php-fpm"
     container_name: chamomile_app
 
   db:
