@@ -13,11 +13,13 @@ class CreatePersonalEntityTable extends Migration
      */
     public function up()
     {
-        Schema::table('personal_entity', function (Blueprint $table) {
+        Schema::create('personal_entity', function (Blueprint $table) {
+            $table->id();
             $table->string('entity_name', 100)->nullable(false);
             $table->unsignedBigInteger('security_type')->nullable(false);
             $table->unsignedBigInteger('entity_type')->nullable(false);
             $table->integer('entity_code')->nullable(false)->unique();
+            $table->timestamps();
             $table->softDeletes();
 
             $table->foreign('security_type')->references('id')->on('security_type');
