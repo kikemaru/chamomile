@@ -9,10 +9,17 @@
   ```bash
   git clone https://github.com/kikemaru/chamomile.git
   ```
-- Navigate to the repository directory and start the Docker container using the following command:
+- Go to the repository directory and run the bash file to configure the server availability settings for nginx
+  
+  ```bash
+  cd chamomile && bash setting.sh allowed_IP_address your_host
+  ```
+- After configuring the settings, run docker-compose to build the Docker container:
 
    ```bash
-  cd chamomile && docker compose up -d
+   docker compose up -d
    ```
 
 ## This application is in the development stage!
+
+setting.sh
